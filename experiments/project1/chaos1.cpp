@@ -1,34 +1,26 @@
 // Game Over
 // My "first" c++ program
 #include <iostream>
-using namespace std;
+#include <string>
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
 
 
 int main(){
-    int score;
-    double distance;
-    char playAgain;
-    bool shieldsUp;
-    short lives, aliensKilled;
-    score = 0;
-    distance - 1200.76;
-    playAgain = 'y';
-    shieldsUp = true;
-    lives = 3;
-    aliensKilled = 10;
-    double engineTemp = 6572.89;
-    cout << "\nscore: " << score << endl;
-    cout << "distance: " << distance << endl;
-    cout << "playAgain: " << playAgain << endl;
-    cout << "lives: " << lives << endl;
-    cout << "aliensKilled: " << aliensKilled << endl;
-    cout << "engneTemp: " << engineTemp << endl;
-    int fuel;
-    cout << "\nHow much fuel?\n";
-    cin >> fuel;
-    cout <<"fuel: " << fuel << endl;
-    typedef unsigned short int ushort;
-    ushort bonus = 10;
-    cout << "\nbonus: " << bonus << endl;
+    const int GOLD_PIECES = 900;
+    int adventurers, killed, survivors;
+    string leader;
+    //getting info
+    cout << "welcome to Lost Fortune\n\n";
+    cout << "Please enter the following for your personalized adventure\n";
+    cout << "Enter a number: ";
+    cin >> adventurers;
+    cout << "Enter a number, smaller tan the first: ";
+    cin >> killed;
+    survivors = adventurers - killed;
+    cout << "Enter your last name: ";
+    cin >> leader;
     return 0;
 }
